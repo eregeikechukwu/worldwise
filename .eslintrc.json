@@ -1,4 +1,10 @@
-{ "extends": "react-app" } // this link we linked here is the on e we installed, they serve as guidelines for eslint to function in our vite app
+{
+  "extends": ["react-app", "eslint:recommended"],
+  "rules": {
+    "react/prop-types": "off ",
+    "no-unused-vars": "warn"
+  }
+} // this link we linked here is the on e we installed, they serve as guidelines for eslint to function in our vite app
 //Installed through:  npm install  eslint vite-plugin-eslint eslint-config-react-app --save-dev
 //AFter runnin this command create a .eslintrc.json file , where you specify te commands that the linter will use in the app
 
