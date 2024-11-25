@@ -1,8 +1,8 @@
 {
   "extends": ["react-app", "eslint:recommended"],
   "rules": {
-    "react/prop-types": "off ",
-    "no-unused-vars": "warn"
+    "react/prop-types": 0,
+    "no-unused-vars": 1
   }
 } // this link we linked here is the on e we installed, they serve as guidelines for eslint to function in our vite app
 //Installed through:  npm install  eslint vite-plugin-eslint eslint-config-react-app --save-dev
