@@ -36,3 +36,4 @@
 :global(.leaflet-popup-content-wrapper) {
   border-left: 5px solid var(--color-brand--2);
 }
+/* Note why we use that :global enclosing tag,  we used it to prevent the vite from adding those wierd rhings to the clasnames */
