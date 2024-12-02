@@ -24,7 +24,7 @@ function Map() {
     getPosition,
   } = useGeolocation();
 
-ch  const mapLng = SearchParams.get("lng");
+  const mapLng = SearchParams.get("lng");
 
   useEffect(
     function () {
