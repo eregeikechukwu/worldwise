@@ -35,6 +35,54 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Jamestown",
+      "country": "Saint Helena, Ascension and Tristan da Cunha",
+      "emoji": "🇸🇭",
+      "date": "2024-12-04T01:09:58.500Z",
+      "notes": "",
+      "position": {
+        "lat": "-15.977875604313653",
+        "lng": "-5.708766796770544"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Jamestown",
+      "country": "Saint Helena, Ascension and Tristan da Cunha",
+      "emoji": "🇸🇭",
+      "date": "2024-12-04T01:11:21.799Z",
+      "notes": "",
+      "position": {
+        "lat": "-15.977012567154466",
+        "lng": "-5.69022959019736"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "Doma",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2024-12-04T01:15:56.272Z",
+      "notes": "",
+      "position": {
+        "lat": "7.905939187642131",
+        "lng": "8.25941519117635"
+      },
+      "id": 98443200
+    },
+    {
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2024-12-04T01:28:46.299Z",
+      "notes": "",
+      "position": {
+        "lat": "38.70751406376587",
+        "lng": "-9.136805319915634"
+      },
+      "id": 98443201
     }
   ]
 }
