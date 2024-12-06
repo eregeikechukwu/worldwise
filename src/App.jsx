@@ -28,7 +28,15 @@ function App() {
             <Route path="cities/:id" element={<City />} />
             <Route path="countries" element={<CountryList />} />
             <Route path="form" element={<Form />} />
-            <Route path="jonas" element={<h1>Fuck Jonas SChemedtmann</h1>} />
+            <Route
+              path="jonas"
+              element={
+                <h1>
+                  Thank you Jesus for Nellify technologies. I am really
+                  greatfull LOrd. Thamk you Lord for Jonas SChemedtmann
+                </h1>
+              }
+            />
           </Route>
           <Route path="*" element={<PageNotFound />} />
         </Routes>
@@ -39,9 +47,9 @@ function App() {
 
 export default App;
 
-//THE route lineuo yuo there is our router. A router is just like in our timbu is ided to swith through differebt pages without necesssarily reloafing the site or page, it just renders the code?function when its clled upon. Then notice we use The "*" path to specify a not found page ie,  a url that is not found
+//THE route lineuo yuo there is our router. A router is just like in our Timbu is ided to swith through differebt pages without necesssarily reloafing the site or page, it just renders the code?function when its clled upon. Then notice we use The "*" path to specify a not found page ie,  a url that is not found
 
 // Routes that we defined with the index tag in them are used as dfault routes incase y9ou lke cleared the url or like from /app/countries, you changed it to /app ,
 
 //<Route index element={<Navigate replace to="cities" />} />
-//initially, this index route was pointing to an element which was aupposed to be stored in a url aswell, but once we go to the app, it will go to the index route(default) which is the a component that is supposed to ve stored under its own url, so therefore to fix this we had to use the <Navigate to> to navigate there instead of just loading the component like that. DOnt forget the replace keyword in it. its used like to replace that url in the browser history stack to avoid confflicting when trying to acess the stack for example when going back.
+//initially, this index route was pointing to an element which was aupposed to be stored in a url aswell, but once we go to the app, it will go to the index route(default) which is the a component that is supposed to have stored under its own url, so therefore to fix this we had to use the <Navigate to> to navigate there instead of just loading the component like that. DOnt forget the replace keyword in it. its used like to replace that url in the browser history stack to avoid confflicting when trying to acess the stack for example when going back.
