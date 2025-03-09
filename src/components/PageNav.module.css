@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav ul {
@@ -9,6 +10,18 @@
   display: flex;
   align-items: center;
   gap: 4rem;
+}
+
+@media screen and (max-width: 720px) {
+  .nav ul {
+    /* display: none; */
+    /* visibility: hidden; */
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    right: 3em;
+    top: 13rem;
+  }
 }
 
 .nav a:link,
@@ -31,4 +44,44 @@ a.ctaLink:visited {
   color: var(--color-dark--0);
   padding: 0.8rem 2rem;
   border-radius: 7px;
+}
+
+.nav__toggle {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  transition: all 0.5s;
+}
+.nav__toggle__background {
+  position: absolute;
+  top: -30px;
+  right: -40px;
+  height: 6rem;
+  width: 8rem;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 0.6rem;
+  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1);
+}
+
+.nav__toggle__open {
+  height: 30rem;
+  width: 20rem;
+  right: -40px;
+  top: -30px;
+}
+
+@media screen and (min-width: 720px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav__toggle__background {
+    display: none;
+  }
+}
+
+.nav__toggle img {
+  position: absolute;
+  width: 3.5rem;
+  height: auto;
 }

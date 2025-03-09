@@ -1,11 +1,29 @@
 import { NavLink } from "react-router-dom";
 import styles from "./PageNav.module.css";
 import Logo from "./Logo";
+import hamburger from "../svgs/ic_bars.svg";
+import { useState } from "react";
 
 function PageNav() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <nav className={styles.nav}>
       <Logo />
+
+      <div className={`${styles.nav__toggle}`}>
+        <div
+          className={`${styles.nav__toggle__background} ${
+            navOpen && styles.nav__toggle__open
+          }`}
+        ></div>
+        <img
+          src={hamburger}
+          onClick={() => {
+            setNavOpen(!navOpen);
+          }}
+        />
+      </div>
 
       <ul>
         <li>

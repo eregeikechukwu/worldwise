@@ -10,8 +10,13 @@
   background-position: center;
   padding: 2.5rem 5rem;
 }
-/* how faf */
 
+@media screen and (max-width: 720px) {
+  .homepage {
+    height: 100vh;
+    margin: 0;
+  }
+}
 .homepage section {
   display: flex;
   flex-direction: column;
