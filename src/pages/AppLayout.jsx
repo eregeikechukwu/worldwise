@@ -24,7 +24,9 @@ function AppLayout() {
   }, []);
 
   if (isMobile && isPotrait) {
-    alert("For best experience, please rotate your device to landscape mode");
+    alert(
+      "For best experience, please rotate your device to landscape mode, and turn on desktop mode."
+    );
   }
 
   return (
