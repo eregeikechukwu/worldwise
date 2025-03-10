@@ -1,7 +1,7 @@
 import { useParams, useSearchParams } from "react-router-dom";
 import styles from "./City.module.css";
 import { useCities } from "../contexts/CitiesContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Spinner from "./Spinner";
 import BackButton from "./BackButton";
 
@@ -14,11 +14,40 @@ const formatDate = (date) =>
   }).format(new Date(date));
 
 function City() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const [isPotrait, setIsPotrait] = useState(
+    window.innerWidth > window.innerHeight
+  );
+const path = window.location.pathname;
+  console.log(path);
+
   const { id } = useParams();
   //THis useparams stuff here is used to get the bparams assigned to the city component.  it normally returns it as an object with the name assigned to the path in the router(eg: path ="cities/id:"), so therefore, herethe id will serve as the key of the returned params object
   const { getCity, currentCity, isLoading } = useCities();
 
   // if (isLoading) return <Spinner />;//This is this position will give an error. rememer that rule of effetcts each having their index, and the return before the effect could punctuate the hook order
+
+  //This is for myy own modification
+
+  useEffect(() => {
+    const handleSize = () => {
+      setIsMobile(window.innerWidth < 1024);
+      setIsPotrait(window.innerWidth > window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleSize);
+    console.log(isMobile);
+
+    return () => {
+      window.removeEventListener("resize", handleSize);
+    };
+  }, []);
+
+  if (isMobile && isPotrait) {
+    alert(
+      "For best experience, please rotate your device to landscape mode, and turn on desktop mode."
+    );
+  }
 
   useEffect(
     function () {
