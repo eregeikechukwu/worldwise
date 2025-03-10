@@ -5,6 +5,22 @@
   min-height: calc(100vh - 5rem);
 }
 
+@media screen and (max-width: 720px) {
+  .login {
+    margin: 0;
+    height: 100vh;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .login {
+    padding: 2rem 2rem;
+  }
+}
+
 .form {
   background-color: var(--color-dark--2);
   border-radius: 7px;
@@ -17,6 +33,19 @@
   /* Different from other form */
   width: 48rem;
   margin: 8rem auto;
+}
+
+@media screen and (max-width: 720px) {
+  .form {
+    margin: auto;
+    width: 42rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .form {
+    max-width: 30rem;
+  }
 }
 
 .row {

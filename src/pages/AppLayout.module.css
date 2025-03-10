@@ -5,3 +5,10 @@
   display: flex;
   position: relative;
 }
+
+@media screen and (max-width: 900px) {
+  .app {
+    padding: 0;
+    zoom: 0.8;
+  }
+}

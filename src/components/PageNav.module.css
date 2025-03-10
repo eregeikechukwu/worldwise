@@ -14,14 +14,21 @@
 
 @media screen and (max-width: 720px) {
   .nav ul {
-    /* display: none; */
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     flex-direction: column;
     gap: 2rem;
     position: absolute;
     right: 3em;
     top: 13rem;
+    transition: all 0.2s ease;
   }
+}
+
+.nav__open__ul {
+  opacity: 1 !important;
+  transition: all 0.2s ease 0.2s !important;
+  visibility: visible !important;
 }
 
 .nav a:link,
@@ -50,15 +57,15 @@ a.ctaLink:visited {
   position: relative;
   display: grid;
   place-items: center;
-
   transition: all 0.5s;
+  margin-right: 4em;
 }
 .nav__toggle__background {
   position: absolute;
-  top: -30px;
-  right: -40px;
-  height: 6rem;
-  width: 8rem;
+  top: -20px;
+  right: -30px;
+  height: 4rem;
+  width: 6rem;
   background-color: rgba(128, 128, 128, 0.3);
   border-radius: 0.6rem;
   transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1);
@@ -69,6 +76,7 @@ a.ctaLink:visited {
   width: 20rem;
   right: -40px;
   top: -30px;
+  background-color: rgba(128, 128, 128, 0.9);
 }
 
 @media screen and (min-width: 720px) {

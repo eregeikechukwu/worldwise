@@ -25,7 +25,7 @@ function PageNav() {
         />
       </div>
 
-      <ul>
+      <ul className={`${navOpen && styles.nav__open__ul}`}>
         <li>
           <NavLink to={"/pricing"}>Pricing</NavLink>
         </li>

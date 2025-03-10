@@ -5,6 +5,20 @@
   min-height: calc(100vh - 5rem);
 }
 
+@media screen and (max-width: 720px) {
+  .product {
+    margin: 0;
+    min-height: 100vh;
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .product {
+    padding: 2rem 2rem;
+  }
+}
+
 .product section {
   width: clamp(80rem, 80%, 90rem);
   margin: 6rem auto;
@@ -14,7 +28,17 @@
   align-items: center;
 }
 
-.product img {
+@media screen and (max-width: 720px) {
+  .product section {
+    width: 100%;
+    grid-template-rows: 40rem min-content;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 0;
+  }
+}
+
+.product section img {
   width: 100%;
 }
 
@@ -22,6 +46,15 @@
   font-size: 4rem;
   line-height: 1.2;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 540px) {
+  .product h2 {
+    font-size: 3rem;
+  }
+  .product p {
+    font-size: 1.3rem;
+  }
 }
 
 .product p {
