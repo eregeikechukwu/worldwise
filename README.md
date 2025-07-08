@@ -7,11 +7,6 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh.
 
-Built by Nelson Erege, designed by Jonas Schemedtmann
-Built for the easy vacation mapping.
-Enjoy!!
-
-
 
 
 
